@@ -1,0 +1,45 @@
+body{
+    background: url('img/uy.png');
+    background-size     : 75%;
+}
+h3{
+    color               : rgb(0, 0, 0);
+    text-align          : center;
+    padding-bottom      : 5px;
+}
+.form{
+    border-style: solid;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    padding: 25px;
+    border-radius: 10px;
+    position: fixed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant-position: normal;
+
+}
+label{
+    color               :rgb(0, 0, 0);
+    font-size           : medium;
+    text-align: center;
+}
+
+img {
+    
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    margin-left: auto;
+  }
+#hasil{
+    background-color:darkslategray;
+    opacity: 1;
+    color: floralwhite;
+    text-align: center;
+}
+#textarea{
+    background-color:darkslategray;
+    text-align: center;
+    color: white;
+}

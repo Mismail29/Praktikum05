@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Chat</title>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+<body onload="focus()">
+	  <nav>
+		 <a href="../kurs/konversi_rupiah.html">Kurs Rupiah</a>
+	  </nav>
+	<fieldset id="area" class="area">
+		<legend>
+			<div class="box">
+				Me Chat
+			</div>
+			<div class="container">
+			<button class="btn btn-info btn-chat" type="button" onclick="openChat()">Chat</button>
+			</div>
+		</legend>
+		</div>
+    <div class="chat" id="chat" style="overflow-y:scroll; height:450px;"><br>
+   	 	</div>
+	</fieldset>
+	<div class="chatbox" id="chatbox">
+		<h3>Message</h3>
+		<form class="form-container">
+		  <textarea id="pesan" type="text" placeholder="Ketikkan sesuatu...." name="msg" required=""></textarea>
+		  <button type="button" class="btn btn-info btn-lg btn-send" onclick="send()">Send</button>
+		  <button type="button" class="btn btn-danger btn-lg btn-close" onclick="closeChat()">Close</button>
+		  <button type="button" class="btn btn-warning btn-lg btn-close" onclick="deleteChat()">Hapus</button>
+		</form>
+	</div>
+
+	
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Konversi Mata Uang</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="../kurs/konversi_rupiah.html">Home</a>
+ 
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+    
+      <li class="nav-item">
+        <a class="nav-link" href="../chat/index.html">Chat</a>
+      </li>     
+    </ul>
+  </div>
+</nav>
+
+<script src="script.js"></script>
+<body onload="focus()">
+  
+  <div class="form">
+  <h3>Mengkonversi Mata Uang</h3>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label>Mata Uang Asal</label>
+          <select id="input_uang" onchange="convert()" class="form-control"> 
+            <option selected="selected" value="1">Indonesia - Rupiah</option>
+            <option value="9915">Dollar US</option>
+            <option value="13472">Dollar Singapore</option>
+            <option value="874">Ringgit Malaysia</option>
+            <option value="120">Yen Jepang</option>
+            <option value="15888">Euro</option>
+            <option value="3592">Riyal Arab Saudi</option>
+          </select> 
+      </div>
+      <div class="form-group col-md-6">
+        <label class="lb1">Mata Uang Tujuan</label>
+        <select id="rupiah" class="form-control"> 
+          <option selected="selected" value="1" hidden="" >Indonesia - Rupiah</option>
+        </select> 
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label>Masukkan Nilai</label>
+        <input type="number" id="nilaiuang" class="form-control" >
+      </div>
+    <div class="form-group col-md-6">
+        <label>Hasil</label>
+        <input type="number" required id="hasil" readonly class="form-control"  >
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-grup col-md-12">
+        <textarea id="textarea" readonly class="form-control" class="hasil"></textarea><br>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <img src="img/icon.png" alt="" id="icon" >
+    </div>
+  </div>
+  
+</body>
+
+</html>
